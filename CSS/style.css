@@ -1,0 +1,479 @@
+import * {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #E4D8D8;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+.navbar .nav-brand h5 {
+  font-size: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+}
+.navbar .nav-links ul {
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+  padding-top: 20px;
+}
+.navbar .nav-links a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.591);
+  font-weight: 600;
+  font-size: 20px;
+}
+.navbar .nav-links a:hover {
+  color: #DD539D;
+}
+.navbar button {
+  background-color: #DD539D;
+  border: none;
+  border-radius: 100px;
+  height: 45px;
+  width: 150px;
+}
+.navbar button a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+.navbar button:hover {
+  background-color: black;
+  color: #DD539D;
+}
+
+.hero {
+  margin-bottom: 200px;
+}
+.hero .hero-img {
+  height: 100vh;
+  position: absolute;
+}
+.hero .main-div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 100px;
+}
+.hero .divA {
+  display: flex;
+}
+.hero .div1 img {
+  position: relative;
+  right: 85px;
+  bottom: 10px;
+}
+.hero .div2 {
+  position: relative;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+.hero .div2 h1 {
+  font-size: 80px;
+  font-family: poppins;
+  font-weight: bold;
+}
+.hero .div2 h1 span {
+  color: rgba(0, 0, 0, 0.3294117647);
+}
+.hero .div2 p {
+  font-size: 20px;
+}
+.hero .div2 p span {
+  font-weight: 600;
+}
+.hero .div2 button {
+  background-color: #DD539D;
+  border: none;
+  border-radius: 100px;
+  height: 45px;
+  width: 150px;
+}
+.hero .div2 button a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+.hero .div2 button:hover {
+  background-color: black;
+  color: #DD539D;
+}
+.hero .div3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  top: 700px;
+  width: 100%;
+}
+.hero .div3 .sub-div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 250px;
+  height: 80px;
+  gap: 20px;
+  background-color: #E4D8D8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.hero .div3 h5 {
+  font-size: 18px;
+}
+.hero .div3 p {
+  font-size: 13px;
+}
+.hero .div3 img {
+  height: 30px;
+  margin-bottom: 25px;
+}
+
+.about .main-div {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+.about .div1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40PX;
+}
+.about .div1 .line {
+  border-left: 2px solid grey;
+  height: 100px;
+}
+.about .div1 h4 {
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: #9D9595;
+}
+.about .div2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.about .div2 h2 {
+  font-size: 50px;
+  width: 680px;
+  font-family: poppins;
+  font-weight: bold;
+}
+.about .div2 p {
+  font-size: larger;
+}
+.about .div2 img {
+  height: 35px;
+  margin-right: 20px;
+}
+
+.toolkit h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: poppins;
+  font-weight: bold;
+}
+.toolkit .main-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 200px 0px;
+}
+.toolkit .main-div .div1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* 
+
+              button img{
+                  opacity: 1;
+                  animation: bounce 5s infinite;
+              } */
+}
+.toolkit .main-div .div1 img {
+  height: 60px;
+  width: 60px;
+}
+.toolkit .main-div .div1 .pic2 {
+  position: relative;
+  bottom: 120px;
+}
+.toolkit .main-div .div1 .pic3 {
+  position: relative; /* left: 10px; */
+  top: 100px;
+}
+.toolkit .main-div .div1 .pic4 {
+  position: relative; /* top:150px; */
+  bottom: 20px;
+}
+.toolkit .main-div .div1 .pic5 {
+  position: relative; /* bottom: 170px; */
+  bottom: 100px;
+}
+.toolkit .main-div .div1 .pic6 {
+  position: relative;
+  left: 150px;
+  bottom: 120px;
+}
+.toolkit .main-div .div1 .pic7 {
+  position: relative; /* top:85px;  left: 50px; */
+}
+.toolkit .main-div .div1 .pic8 {
+  position: relative;
+  top: 100px;
+  right: 100px;
+}
+.toolkit .main-div .div1 .pic9 {
+  position: relative;
+  top: 100px;
+}
+.toolkit .main-div .div1 .pic10 {
+  position: relative;
+  bottom: 160px;
+  left: 300px;
+  top: 150px;
+}
+.toolkit .main-div .div1 .active-pic {
+  height: 200px;
+  width: 200px;
+  left: 200px;
+}
+.toolkit .main-div .tab img .active {
+  background-color: red;
+  height: 200px;
+  width: 300px;
+}
+.toolkit .main-div .tab button {
+  background-color: inherit;
+  border-radius: 50%;
+  border: none;
+}
+.toolkit .main-div .tabcontent {
+  display: none;
+  -webkit-animation: fadeEffect 1s;
+          animation: fadeEffect 1s;
+}
+.toolkit .main-div .div2 {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.toolkit .main-div .div2 p {
+  width: 400px;
+}
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.portfolio h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: poppins;
+  font-weight: bold;
+}
+.portfolio .div1 {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.portfolio .div1 p {
+  width: 700px;
+}
+.portfolio .div1 div { /* Safari prior 6.1 */
+  transition: width 2s;
+}
+.portfolio .div1 div:hover {
+  width: 300px;
+  height: 300px;
+}
+.portfolio .div2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+  padding: 0px 60px;
+}
+.portfolio .div2 .sub-div {
+  display: flex;
+  gap: 80px;
+}
+.portfolio .div2 .sub-div h5 {
+  font-size: 18px;
+}
+.portfolio .div2 .sub-div .tabA {
+  border-bottom: 3px solid #DD539D;
+  width: 174px;
+  height: 24px;
+}
+.portfolio .div2 button {
+  background-color: #DD539D;
+  border: none;
+  border-radius: 100px;
+  height: 45px;
+  width: 150px;
+}
+.portfolio .div2 button a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+.portfolio .div2 button:hover {
+  background-color: black;
+  color: #DD539D;
+}
+.portfolio .div3, .portfolio .div4 {
+  display: flex;
+  justify-content: center;
+}
+.portfolio .div3 .sub-div, .portfolio .div4 .sub-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.portfolio .div3 .sub-div button, .portfolio .div4 .sub-div button {
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 100px;
+  height: 45px;
+  width: 150px;
+}
+.portfolio .div3 .sub-div button a, .portfolio .div4 .sub-div button a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+}
+.portfolio .div3 .sub-div button:hover, .portfolio .div4 .sub-div button:hover {
+  background-color: black;
+}
+.portfolio .div3 .sub-div button a:hover, .portfolio .div4 .sub-div button a:hover {
+  color: white;
+}
+.portfolio .div3 .sub-div p, .portfolio .div4 .sub-div p {
+  width: 400px;
+}
+.portfolio .div4 .sub-div {
+  padding-left: 100px;
+}
+
+.testimonials .div1 {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials .div1 h2 {
+  position: relative;
+  left: 150px;
+  font-size: 130px;
+  font-family: poppins;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.3019607843);
+  padding: 80px 0px;
+}
+.testimonials .div1 img {
+  height: 80px;
+  position: relative;
+  z-index: 2;
+}
+.testimonials .div1 .pic1 {
+  right: 900px;
+  border: 2px solid #DD539D;
+  border-radius: 50%;
+  padding: 2px;
+}
+.testimonials .div1 .pic2 {
+  right: 800px;
+  top: 150px;
+}
+.testimonials .div1 .pic3 {
+  left: 20px;
+  border: 2px solid #DD539D;
+  border-radius: 50%;
+  padding: 2px;
+}
+.testimonials .div1 .pic4 {
+  right: 200px;
+  bottom: 160px;
+}
+.testimonials .card1 {
+  background-color: #DD539D;
+  position: relative;
+  z-index: 4;
+  left: 150px;
+  top: 120px;
+  padding: 30px;
+  border-radius: 30px 30px 30px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.testimonials .card2 {
+  background-color: #DD539D;
+  position: relative;
+  left: 830px;
+  bottom: 120px;
+  padding: 30px;
+  border-radius: 30px 0px 30px 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer .main-div {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+footer .main-div h2 {
+  font-size: 50px;
+  font-family: poppins;
+  font-weight: bold;
+}
+footer .main-div ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  gap: 100px;
+  list-style-image: url("sqpurple.gif");
+}
+footer .main-div ul li {
+  font-size: 20px;
+}
+footer .main-div ul li a {
+  text-decoration: none;
+  color: black;
+}
+footer .main-div p {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
