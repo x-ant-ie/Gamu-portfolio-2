@@ -26,22 +26,3 @@ function openTab(evt, tabName) {
  document.getElementById("defaultOpen").click();
     
 
-
- $(document).ready(function(){
-
- $('.tablinks').click(function(){
-   $('.tablinks').removeClass('').addClass('active');
-
-
-
-  //  $('.tablinks img:first').css({
-  //    'width':'500px',
-  //    'height':'300px'
-  //  });
- });
-
-
-
-
-
- });

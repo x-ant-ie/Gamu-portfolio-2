@@ -1,4 +1,4 @@
-import * {
+* {
   padding: 0;
   margin: 0;
 }
@@ -118,6 +118,24 @@ body {
   gap: 100px;
   top: 700px;
   width: 100%;
+  /*    .divABC{
+          width: 100px;
+         height: 100px;
+         background-color: red;
+         position: relative;
+         animation-name: example;
+         animation-duration: 4s;
+         animation-direction: reverse;  
+      }
+
+
+  @keyframes example {
+      0%   {background-color:red; left:0px; right:0px;}
+      25%  {background-color:yellow; left:200px; right:0px;}
+      50%  {background-color:blue; left:200px; right:200px;}
+      75%  {background-color:green; left:0px; right:200px;}
+      100% {background-color:red; left:0px; right:0px;}
+  } */
 }
 .hero .div3 .sub-div {
   display: flex;
@@ -222,7 +240,7 @@ body {
   bottom: 20px;
 }
 .toolkit .main-div .div1 .pic5 {
-  position: relative; /* bottom: 170px; */
+  position: relative;
   bottom: 100px;
 }
 .toolkit .main-div .div1 .pic6 {
@@ -240,7 +258,8 @@ body {
 }
 .toolkit .main-div .div1 .pic9 {
   position: relative;
-  top: 100px;
+  top: 300px;
+  right: 200px;
 }
 .toolkit .main-div .div1 .pic10 {
   position: relative;
@@ -251,12 +270,7 @@ body {
 .toolkit .main-div .div1 .active-pic {
   height: 200px;
   width: 200px;
-  left: 200px;
-}
-.toolkit .main-div .tab img .active {
-  background-color: red;
-  height: 200px;
-  width: 300px;
+  left: 700px;
 }
 .toolkit .main-div .tab button {
   background-color: inherit;
@@ -351,7 +365,6 @@ body {
 }
 .portfolio .div2 button:hover {
   background-color: black;
-  color: #DD539D;
 }
 .portfolio .div3, .portfolio .div4 {
   display: flex;
@@ -476,4 +489,106 @@ footer .main-div ul li a {
 }
 footer .main-div p {
   text-align: center;
+}
+
+/*X-Large devices (large desktops, less than 1400px)*/
+@media (min-width: 1200px) and (max-width: 1399px) {
+  body {
+    background-color: yellow;
+  }
+  .hero-img {
+    display: none;
+  }
+  .toolkit .main-div .div1 img {
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+}
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  body {
+    background-color: green;
+  }
+}
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    background-color: grey;
+  }
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  body {
+    background-color: blue;
+  }
+}
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  body {
+    background-color: red;
+  }
+  .navbar {
+    display: none;
+    position: relative;
+  }
+  .navbar .nav-brand {
+    display: none;
+  }
+  .hero .hero-img {
+    display: none;
+  }
+  .hero .div1 img {
+    right: 0px;
+  }
+  .hero .div2 h1 {
+    font-size: 25px;
+  }
+  .hero .divA {
+    flex-direction: column;
+  }
+  .hero .divA p {
+    font-size: 13px;
+  }
+  .hero .div2 {
+    right: 0px;
+  }
+  .hero .div3 {
+    flex-direction: column;
+    padding-top: 80px;
+    gap: 10px;
+  }
+  .about .main-div {
+    flex-direction: column;
+  }
+  .about .div1 {
+    flex-direction: row;
+  }
+  .about .div1 .line {
+    border-left: none;
+    border-bottom: 2px solid grey;
+    height: 0px;
+    width: 100px;
+  }
+  .about .div1 h4 {
+    transform: rotate(270deg);
+  }
+  .about .div2 h2 {
+    font-size: 22px;
+    width: 100%;
+  }
+  .about .div2 p {
+    font-size: 15px;
+  }
+  .toolkit .main-div {
+    flex-direction: column;
+  }
+  .toolkit h2 {
+    font-size: 22px;
+    text-align: left;
+  }
+  .testimonials {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
