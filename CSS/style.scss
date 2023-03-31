@@ -37,11 +37,13 @@
            text-decoration: none;
            color: rgba(0, 0, 0, 0.591);
            font-weight: 600;
-           font-size: 20px;  
+           font-size: 20px;
+           
         }
 
         a:hover{
             color: #DD539D;
+           
         }
   
     }
@@ -52,6 +54,7 @@
         border-radius: 100px;
         height: 45px;
         width: 150px;
+          
 
         a{
             text-decoration: none;
@@ -154,7 +157,15 @@
         top: 700px;
         width: 100%;
         
+     a{
+        text-decoration: none;
+        color: black;
+     }
 
+     .sub-div:hover{
+        background-color: #9D9595;
+        width: 300px;
+     }
         .sub-div{
             display: flex;
             align-items: flex-end;
@@ -164,7 +175,7 @@
             gap: 20px;
             background-color:#E4D8D8;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-           
+            transition: width 1s;
         }
 
       
@@ -272,47 +283,42 @@
         margin: 200px 0px;
 
         .div1{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-             flex-wrap: wrap;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            //  flex-wrap: wrap;
           
 
 
             img{
                 height: 60px;
                 width: 60px;
+                // animation: bounce 5s infinite;
                 // transition: width 2s;
                 // transition-delay: 2s;
             }
 
+                .pic1{animation: bounce 3s infinite;}
 
-/* 
+              .pic2{ position: relative; bottom: 140px;left: 100px; animation: bounce 5s infinite;}
 
-            button img{
-                opacity: 1;
-                animation: bounce 5s infinite;
-            } */
+              .pic3{ position: relative; top: 300px; animation: bounce 3s infinite;}
 
-             .pic2{ position: relative; bottom: 120px; }
+              .pic4{position: relative; bottom: 20px;animation: bounce 4s infinite;}
 
-             .pic3{ position: relative;/* left: 10px; */ top: 100px;}
+              .pic5{position: relative; top: 160px;animation: bounce 2s infinite;}
 
-             .pic4{position: relative; /* top:150px; */ bottom: 20px;}
+              .pic6{ position: relative;  left: 150px; bottom: 120px;animation: bounce 3s infinite; }
 
-             .pic5{position: relative; bottom: 100px;}
+              .pic7{ position: relative;animation: bounce 4s infinite;}
 
-             .pic6{ position: relative;  left: 150px; bottom: 120px;}
+              .pic8{  position: relative; right: 330px; top: 126px;animation: bounce 5s infinite;}
 
-             .pic7{ position: relative;/* top:85px;  left: 50px; */}
+              .pic9{ position: relative; top: 19px;animation: bounce 3s infinite; }
 
-             .pic8{ position: relative; top: 100px; right: 100px;}
+              .pic10{position: relative; bottom: 160px;  left: 300px; top: 150px;animation: bounce 4s infinite;}
 
-             .pic9{ position: relative; top: 300px;right: 200px;}
-
-             .pic10{position: relative; bottom: 160px;  left: 300px; top: 150px;}
-
-             .active-pic{height: 200px; width: 200px;left: 700px;}
+              .active-pic{height: 200px; width: 200px;position: relative; left: 280px;}
 
 
 
@@ -353,11 +359,11 @@
        }
 
 
-    //    @keyframes bounce {
-    //       10%{
-    //         transform: translateY(40px);
-    //       } 
-    //     }
+       @keyframes bounce {
+          10%{
+            transform: translateY(40px);
+          } 
+        }
 
     } 
 
@@ -595,6 +601,8 @@ footer{
                 text-decoration: none;
                 color: black;
             }
+
+            li a:hover{color: #9D9595;}
         }
 
         p{
@@ -614,14 +622,6 @@ footer{
 
    .hero-img{display: none;}
 
-   .toolkit {
-        .main-div .div1 img{
-            top:0px;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-        }
-     }
  } 
  
  
@@ -687,7 +687,7 @@ footer{
            .div1 img{right: 0px;}
 
            .div2 h1{
-               font-size: 25px;
+               font-size: 30px;
             }
 
             .divA{
@@ -726,7 +726,7 @@ footer{
 
         .div2 {
                 h2{
-                font-size: 22px;
+                font-size: 25px;
                 width: 100%;
                }
                p{
@@ -739,11 +739,69 @@ footer{
     }
 
     .toolkit {
-        .main-div{flex-direction: column;}
-        h2{font-size: 22px;text-align: left;}
+        .main-div{
+            flex-direction: column;
+            justify-content: center;
+            margin: 40px 0px;
+            gap: 100px;
+
+            .div1{
+                .pic2,.pic3,.pic4,.pic5,.pic6,.pic7,.pic8,.pic9,.pic10,.active-pic{left: 0px;right: 0x;top: 0px;bottom: 0px;}
+               }
+
+           .div2  p{font-size: 15px;width: 350px;}    
+        }
+
+        .tab{display: flex;flex-wrap: wrap; justify-content: center;gap: 40px;}
+
+        h2{font-size: 25px;text-align: left;}
+
+        h3{font-size: 18px;}
+
     }
 
+    .portfolio {
+
+        h2{font-size: 25px;}
+
+        .div1{
+            text-align: left;align-items:start;
+
+            p{width: 100%;}
+        }
+
+        .div2{ 
+            margin:20px 0px;
+            padding: 0px 0px;
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 40px;
+
+            .sub-div { 
+               h5{font-size: 13px;}
+               .tabA{width: 130px;}
+              }
+        }
+
+        .div3{
+            flex-direction: column-reverse;
+            gap: 30px;
+           .sub-div  p{font-size: 15px; width:100%;}
+        }
+
+        h3{font-size: 18px;}
+    }
 
     .testimonials{display: none;}
+
+    footer .main-div{
+
+        h2{font-size: 25px;}
+        ul{
+            flex-direction: column;
+            gap: 20px;
+            li{font-size: 15px;}
+        }
+    }
 
  }

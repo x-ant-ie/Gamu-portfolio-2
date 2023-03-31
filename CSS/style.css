@@ -137,6 +137,14 @@ body {
       100% {background-color:red; left:0px; right:0px;}
   } */
 }
+.hero .div3 a {
+  text-decoration: none;
+  color: black;
+}
+.hero .div3 .sub-div:hover {
+  background-color: #9D9595;
+  width: 300px;
+}
 .hero .div3 .sub-div {
   display: flex;
   align-items: flex-end;
@@ -146,6 +154,7 @@ body {
   gap: 20px;
   background-color: #E4D8D8;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: width 1s;
 }
 .hero .div3 h5 {
   font-size: 18px;
@@ -211,66 +220,77 @@ body {
   align-items: center;
   margin: 200px 0px;
 }
-.toolkit .main-div .div1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  /* 
-
-              button img{
-                  opacity: 1;
-                  animation: bounce 5s infinite;
-              } */
-}
 .toolkit .main-div .div1 img {
   height: 60px;
   width: 60px;
 }
+.toolkit .main-div .div1 .pic1 {
+  -webkit-animation: bounce 3s infinite;
+          animation: bounce 3s infinite;
+}
 .toolkit .main-div .div1 .pic2 {
   position: relative;
-  bottom: 120px;
+  bottom: 140px;
+  left: 100px;
+  -webkit-animation: bounce 5s infinite;
+          animation: bounce 5s infinite;
 }
 .toolkit .main-div .div1 .pic3 {
-  position: relative; /* left: 10px; */
-  top: 100px;
+  position: relative;
+  top: 300px;
+  -webkit-animation: bounce 3s infinite;
+          animation: bounce 3s infinite;
 }
 .toolkit .main-div .div1 .pic4 {
-  position: relative; /* top:150px; */
+  position: relative;
   bottom: 20px;
+  -webkit-animation: bounce 4s infinite;
+          animation: bounce 4s infinite;
 }
 .toolkit .main-div .div1 .pic5 {
   position: relative;
-  bottom: 100px;
+  top: 160px;
+  -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite;
 }
 .toolkit .main-div .div1 .pic6 {
   position: relative;
   left: 150px;
   bottom: 120px;
+  -webkit-animation: bounce 3s infinite;
+          animation: bounce 3s infinite;
 }
 .toolkit .main-div .div1 .pic7 {
-  position: relative; /* top:85px;  left: 50px; */
+  position: relative;
+  -webkit-animation: bounce 4s infinite;
+          animation: bounce 4s infinite;
 }
 .toolkit .main-div .div1 .pic8 {
   position: relative;
-  top: 100px;
-  right: 100px;
+  right: 330px;
+  top: 126px;
+  -webkit-animation: bounce 5s infinite;
+          animation: bounce 5s infinite;
 }
 .toolkit .main-div .div1 .pic9 {
   position: relative;
-  top: 300px;
-  right: 200px;
+  top: 19px;
+  -webkit-animation: bounce 3s infinite;
+          animation: bounce 3s infinite;
 }
 .toolkit .main-div .div1 .pic10 {
   position: relative;
   bottom: 160px;
   left: 300px;
   top: 150px;
+  -webkit-animation: bounce 4s infinite;
+          animation: bounce 4s infinite;
 }
 .toolkit .main-div .div1 .active-pic {
   height: 200px;
   width: 200px;
-  left: 700px;
+  position: relative;
+  left: 280px;
 }
 .toolkit .main-div .tab button {
   background-color: inherit;
@@ -305,6 +325,16 @@ body {
   }
   to {
     opacity: 1;
+  }
+}
+@-webkit-keyframes bounce {
+  10% {
+    transform: translateY(40px);
+  }
+}
+@keyframes bounce {
+  10% {
+    transform: translateY(40px);
   }
 }
 
@@ -487,6 +517,9 @@ footer .main-div ul li a {
   text-decoration: none;
   color: black;
 }
+footer .main-div ul li a:hover {
+  color: #9D9595;
+}
 footer .main-div p {
   text-align: center;
 }
@@ -498,12 +531,6 @@ footer .main-div p {
   }
   .hero-img {
     display: none;
-  }
-  .toolkit .main-div .div1 img {
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
   }
 }
 /* Large devices (desktops, less than 1200px) */
@@ -543,7 +570,7 @@ footer .main-div p {
     right: 0px;
   }
   .hero .div2 h1 {
-    font-size: 25px;
+    font-size: 30px;
   }
   .hero .divA {
     flex-direction: column;
@@ -575,7 +602,7 @@ footer .main-div p {
     transform: rotate(270deg);
   }
   .about .div2 h2 {
-    font-size: 22px;
+    font-size: 25px;
     width: 100%;
   }
   .about .div2 p {
@@ -583,12 +610,78 @@ footer .main-div p {
   }
   .toolkit .main-div {
     flex-direction: column;
+    justify-content: center;
+    margin: 40px 0px;
+    gap: 100px;
+  }
+  .toolkit .main-div .div1 .pic2, .toolkit .main-div .div1 .pic3, .toolkit .main-div .div1 .pic4, .toolkit .main-div .div1 .pic5, .toolkit .main-div .div1 .pic6, .toolkit .main-div .div1 .pic7, .toolkit .main-div .div1 .pic8, .toolkit .main-div .div1 .pic9, .toolkit .main-div .div1 .pic10, .toolkit .main-div .div1 .active-pic {
+    left: 0px;
+    right: 0x;
+    top: 0px;
+    bottom: 0px;
+  }
+  .toolkit .main-div .div2 p {
+    font-size: 15px;
+    width: 350px;
+  }
+  .toolkit .tab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
   }
   .toolkit h2 {
-    font-size: 22px;
+    font-size: 25px;
     text-align: left;
+  }
+  .toolkit h3 {
+    font-size: 18px;
+  }
+  .portfolio h2 {
+    font-size: 25px;
+  }
+  .portfolio .div1 {
+    text-align: left;
+    align-items: start;
+  }
+  .portfolio .div1 p {
+    width: 100%;
+  }
+  .portfolio .div2 {
+    margin: 20px 0px;
+    padding: 0px 0px;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 40px;
+  }
+  .portfolio .div2 .sub-div h5 {
+    font-size: 13px;
+  }
+  .portfolio .div2 .sub-div .tabA {
+    width: 130px;
+  }
+  .portfolio .div3 {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .portfolio .div3 .sub-div p {
+    font-size: 15px;
+    width: 100%;
+  }
+  .portfolio h3 {
+    font-size: 18px;
   }
   .testimonials {
     display: none;
+  }
+  footer .main-div h2 {
+    font-size: 25px;
+  }
+  footer .main-div ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer .main-div ul li {
+    font-size: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
