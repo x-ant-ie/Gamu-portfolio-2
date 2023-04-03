@@ -529,8 +529,14 @@ footer .main-div p {
   body {
     background-color: yellow;
   }
-  .hero-img {
+  .hero .hero-img {
     display: none;
+  }
+  .hero .divA {
+    margin: 60px 0px;
+  }
+  .toolkit .main-div {
+    gap: 280px;
   }
 }
 /* Large devices (desktops, less than 1200px) */
@@ -538,17 +544,250 @@ footer .main-div p {
   body {
     background-color: green;
   }
+  .hero .hero-img {
+    display: none;
+  }
+  .hero .divA {
+    margin: 40px;
+  }
+  .hero .div2 {
+    right: 0px;
+  }
+  .about .main-div .div3 img {
+    position: relative;
+    top: 100px;
+  }
+  .toolkit .main-div {
+    margin: 60px 0px;
+  }
+  .toolkit .main-div .div1 .pic2, .toolkit .main-div .div1 .pic3, .toolkit .main-div .div1 .pic4, .toolkit .main-div .div1 .pic5, .toolkit .main-div .div1 .pic6, .toolkit .main-div .div1 .pic7, .toolkit .main-div .div1 .pic8, .toolkit .main-div .div1 .pic9, .toolkit .main-div .div1 .pic10, .toolkit .main-div .div1 .active-pic {
+    left: 0px;
+    right: 0x;
+    top: 0px;
+    bottom: 0px;
+  }
+  .toolkit .tab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  .testimonials .div1 .pic1 {
+    right: 720px;
+    bottom: 20px;
+  }
+  .testimonials .div1 .pic3 {
+    left: 0px;
+    right: 500px;
+  }
+  .testimonials .card2 {
+    left: 700px;
+  }
 }
 /* Medium devices (tablets, less than 992px) */
 @media (min-width: 768px) and (max-width: 991px) {
   body {
     background-color: grey;
   }
+  .hero .hero-img {
+    display: none;
+  }
+  .hero .divA {
+    flex-direction: column;
+  }
+  .hero .div2 {
+    right: 0px;
+  }
+  .hero .div3 {
+    flex-direction: column;
+    padding-top: 80px;
+    gap: 10px;
+  }
+  .about .main-div .div3 img {
+    position: relative;
+    top: 180px;
+  }
+  .toolkit .main-div {
+    margin: 60px 0px;
+  }
+  .toolkit .main-div .div1 .pic2, .toolkit .main-div .div1 .pic3, .toolkit .main-div .div1 .pic4, .toolkit .main-div .div1 .pic5, .toolkit .main-div .div1 .pic6, .toolkit .main-div .div1 .pic7, .toolkit .main-div .div1 .pic8, .toolkit .main-div .div1 .pic9, .toolkit .main-div .div1 .pic10, .toolkit .main-div .div1 .active-pic {
+    left: 0px;
+    right: 0x;
+    top: 0px;
+    bottom: 0px;
+  }
+  .toolkit .main-div .div2 p {
+    width: 300px;
+  }
+  .toolkit .tab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  .testimonials .div1 h2 {
+    font-size: 90px;
+  }
+  .testimonials .div1 .pic1 {
+    right: 460px;
+    bottom: 20px;
+  }
+  .testimonials .div1 .pic2 {
+    right: 530px;
+  }
+  .testimonials .div1 .pic3 {
+    left: 0px;
+    right: 890px;
+  }
+  .testimonials .card1 {
+    height: 400px;
+    width: 300px;
+  }
+  .testimonials .card2 {
+    left: 380px;
+    height: 400px;
+    width: 300px;
+  }
+  .portfolio .div2 {
+    margin: 20px 0px;
+    padding: 0px 0px;
+  }
+  .portfolio .div2 .sub-div h5 {
+    font-size: 13px;
+  }
+  .portfolio .div2 .sub-div .tabA {
+    width: 130px;
+  }
+  .portfolio .div3 {
+    margin-bottom: 40px;
+  }
+  .portfolio .div3 .sub-div p {
+    width: 100%;
+  }
+  .portfolio .div3 img {
+    height: 350px;
+    width: 400px;
+  }
 }
 /* Small devices (landscape phones, less than 768px) */
 @media (min-width: 576px) and (max-width: 767px) {
   body {
     background-color: blue;
+  }
+  .hero .hero-img {
+    display: none;
+  }
+  .hero .div1 img {
+    right: 0px;
+  }
+  .hero .divA {
+    flex-direction: column;
+  }
+  .hero .div2 {
+    right: 0px;
+  }
+  .hero .div3 {
+    flex-direction: column;
+    padding-top: 80px;
+    gap: 10px;
+  }
+  .about .main-div {
+    flex-direction: column;
+  }
+  .about .div1 {
+    flex-direction: row;
+  }
+  .about .div1 .line {
+    border-left: none;
+    border-bottom: 2px solid grey;
+    height: 0px;
+    width: 100px;
+  }
+  .about .div1 h4 {
+    transform: rotate(270deg);
+  }
+  .about .div2 h2 {
+    width: 100%;
+  }
+  .toolkit .main-div {
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px 0px;
+    gap: 100px;
+  }
+  .toolkit .main-div .div1 .pic2, .toolkit .main-div .div1 .pic3, .toolkit .main-div .div1 .pic4, .toolkit .main-div .div1 .pic5, .toolkit .main-div .div1 .pic6, .toolkit .main-div .div1 .pic7, .toolkit .main-div .div1 .pic8, .toolkit .main-div .div1 .pic9, .toolkit .main-div .div1 .pic10, .toolkit .main-div .div1 .active-pic {
+    left: 0px;
+    right: 0x;
+    top: 0px;
+    bottom: 0px;
+  }
+  .toolkit .main-div .div2 p {
+    width: 350px;
+  }
+  .toolkit .tab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  .toolkit h2 {
+    text-align: left;
+  }
+  .portfolio .div1 {
+    text-align: left;
+    align-items: start;
+  }
+  .portfolio .div1 p {
+    width: 100%;
+  }
+  .portfolio .div2 {
+    margin: 20px 0px;
+    padding: 0px 0px;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 40px;
+  }
+  .portfolio .div2 .sub-div .tabA {
+    width: 130px;
+  }
+  .portfolio .div3 {
+    flex-direction: column-reverse;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  .portfolio .div3 .sub-div p {
+    width: 100%;
+  }
+  .testimonials {
+    display: none;
+  }
+  .testimonials .card1 {
+    left: 0px;
+    width: 300px;
+    height: 400px;
+    top: 0px;
+  }
+  .testimonials .card2 {
+    display: none;
+  }
+  .testimonials .div1 {
+    flex-direction: column;
+    margin: 40px 0px;
+    margin-bottom: 350px;
+  }
+  .testimonials .div1 h2 {
+    left: 0px;
+  }
+  .testimonials .div1 .pic2, .testimonials .div1 .pic3, .testimonials .div1 .pic4 {
+    display: none;
+  }
+  .testimonials .div1 .pic1 {
+    right: 120px;
+    bottom: 20px;
+  }
+  footer .main-div ul {
+    flex-direction: column;
+    gap: 20px;
   }
 }
 /* X-Small devices (portrait phones, less than 576px) */
@@ -663,6 +902,7 @@ footer .main-div p {
   .portfolio .div3 {
     flex-direction: column-reverse;
     gap: 30px;
+    margin-bottom: 40px;
   }
   .portfolio .div3 .sub-div p {
     font-size: 15px;
@@ -673,6 +913,31 @@ footer .main-div p {
   }
   .testimonials {
     display: none;
+  }
+  .testimonials .card1 {
+    left: 0px;
+    width: 300px;
+    height: 400px;
+    top: 0px;
+  }
+  .testimonials .card2 {
+    display: none;
+  }
+  .testimonials .div1 {
+    flex-direction: column;
+    margin: 40px 0px;
+    margin-bottom: 350px;
+  }
+  .testimonials .div1 h2 {
+    font-size: 40px;
+    left: 0px;
+  }
+  .testimonials .div1 .pic2, .testimonials .div1 .pic3, .testimonials .div1 .pic4 {
+    display: none;
+  }
+  .testimonials .div1 .pic1 {
+    right: 120px;
+    bottom: 20px;
   }
   footer .main-div h2 {
     font-size: 25px;
