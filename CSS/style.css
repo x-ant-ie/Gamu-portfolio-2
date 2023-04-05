@@ -14,7 +14,6 @@ body {
 }
 .navbar .nav-brand h5 {
   font-size: 40px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: white;
 }
 .navbar .nav-links ul {
@@ -219,6 +218,7 @@ body {
   justify-content: space-around;
   align-items: center;
   margin: 200px 0px;
+  margin-bottom: 300px;
 }
 .toolkit .main-div .div1 img {
   height: 60px;
@@ -432,14 +432,27 @@ body {
   padding-left: 100px;
 }
 
-.testimonials .div1 {
+.testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 250px 0px 100px 0px;
+  margin-bottom: 200px;
+  /* Style the tab */
+  /* Style the buttons that are used to open the tab content */
+  /* Change background color of buttons on hover */
+  /* Create an active/current tablink class */
+  /* Style the tab content */
+}
+.testimonials .tab {
   background-color: black;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.testimonials .div1 h2 {
+.testimonials .tab h2 {
   position: relative;
   left: 150px;
   font-size: 130px;
@@ -448,46 +461,55 @@ body {
   color: rgba(255, 255, 255, 0.3019607843);
   padding: 80px 0px;
 }
-.testimonials .div1 img {
+.testimonials .tab img {
   height: 80px;
-  position: relative;
   z-index: 2;
 }
-.testimonials .div1 .pic1 {
+.testimonials .tab .pic1 {
+  position: relative;
   right: 900px;
   border: 2px solid #DD539D;
   border-radius: 50%;
   padding: 2px;
 }
-.testimonials .div1 .pic2 {
+.testimonials .tab .pic2 {
+  position: relative;
   right: 800px;
   top: 150px;
 }
-.testimonials .div1 .pic3 {
+.testimonials .tab .pic3 {
+  position: relative;
   left: 20px;
   border: 2px solid #DD539D;
   border-radius: 50%;
   padding: 2px;
 }
-.testimonials .div1 .pic4 {
+.testimonials .tab .pic4 {
+  position: relative;
   right: 200px;
   bottom: 160px;
+}
+.testimonials .tab button {
+  background-color: transparent;
+  float: left;
+  border: none;
+  outline: none;
 }
 .testimonials .card1 {
   background-color: #DD539D;
   position: relative;
   z-index: 4;
-  left: 150px;
-  top: 120px;
+  right: 350px;
+  margin-top: -520px;
   padding: 30px;
   border-radius: 30px 30px 30px 0px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.testimonials .card2 {
+.testimonials .card3 {
   background-color: #DD539D;
   position: relative;
-  left: 830px;
-  bottom: 120px;
+  left: 280px;
+  margin-top: -100px;
   padding: 30px;
   border-radius: 30px 0px 30px 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
