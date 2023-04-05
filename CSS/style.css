@@ -815,7 +815,7 @@ footer .main-div p {
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {
   body {
-    background-color: red;
+    background-color: white;
   }
   .navbar {
     display: none;
