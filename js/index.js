@@ -47,26 +47,51 @@ function openTab(evt, tabName) {
 
     
 
-    function openCity(evt, cityName) {
-      // Declare all variables
-      var i, cardcontent, cardlinks;
+    // function openCity(evt, cityName) {
+    //   // Declare all variables
+    //   var i, cardcontent, cardlinks;
     
-      // Get all elements with class="tabcontent" and hide them
+    //   // Get all elements with class="tabcontent" and hide them
+    //   cardcontent = document.getElementsByClassName("cardcontent");
+    //   for (i = 0; i < cardcontent.length; i++) {
+    //     cardcontent[i].style.display = "none";
+    //   }
+    
+    //   // Get all elements with class="tablinks" and remove the class "active"
+    //   cardlinks = document.getElementsByClassName("cardlinks");
+    //   for (i = 0; i < cardlinks.length; i++) {
+    //     cardlinks[i].className = cardlinks[i].className.replace(" active", "");
+    //   }
+    
+    //   // Show the current tab, and add an "active" class to the button that opened the tab
+    //   document.getElementById(cityName).style.display = "block";
+    //   evt.currentTarget.className += " active";
+    // }
+
+    // // Get the element with id="defaultOpen" and click on it
+    // document.getElementById("defaultOpen").click();
+
+
+    function clickHandle(evt, cardName) {
+      let i, cardcontent, cardlinks;
+
+      // This is to clear the previous clicked content.
       cardcontent = document.getElementsByClassName("cardcontent");
       for (i = 0; i < cardcontent.length; i++) {
-        cardcontent[i].style.display = "none";
+          cardcontent[i].style.display = "none";
       }
-    
-      // Get all elements with class="tablinks" and remove the class "active"
-      cardlinks = document.getElementsByClassName("cardlinks");
-      for (i = 0; i < cardlinks.length; i++) {
-        cardlinks[i].className = cardlinks[i].className.replace(" active", "");
-      }
-    
-      // Show the current tab, and add an "active" class to the button that opened the tab
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
 
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
+      // Set the tab to be "active".
+      cardlinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < cardlinks.length; i++) {
+          cardlinks[i].className = cardlinks[i].className.replace(" active", "");
+      }
+
+      // Display the clicked tab and set it to active.
+      document.getElementById(cardName).style.display = "block";
+      evt.currentTarget.className += " active";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+  
